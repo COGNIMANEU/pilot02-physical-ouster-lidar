@@ -1,6 +1,6 @@
 # Pilot02-Physical Ouster Lidar ROS 2 Driver
 
-This repository contains the ROS 2 driver for **Pilot02-Physical Ouster Lidar** based on `https://github.com/ouster-lidar/ouster-ros/tree/ros2`. It includes all the necessary configurations, launch files, and a Docker setup to deploy the ouster Lidar driver in a containerized environment.
+This repository contains the ROS 2 driver for **Pilot02-Physical Ouster Lidar** based on https://github.com/ouster-lidar/ouster-ros/tree/ros2 package. It includes all the necessary configurations, launch files, and a Docker setup to deploy the ouster Lidar driver in a containerized environment.
 
 ## Description
 
