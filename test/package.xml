@@ -1,0 +1,3 @@
+<test_depend>rclpy</test_depend>
+<test_depend>sensor_msgs</test_depend>
+<test_depend>pytest</test_depend>

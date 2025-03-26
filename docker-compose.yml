@@ -1,0 +1,22 @@
+services:
+  ouster_driver:
+    build:
+      context: ./
+    container_name: ouster_driver
+    networks:
+      - ouster_net
+    environment:
+      - LAUNCH_FILE=pilot2.sensor.composite.launch.xml
+    command: [ "--", "sensor_hostname:=192.168.1.115", "lidar_port:=7502", "imu_port:=7503", "rviz:=false" ]
+
+  test_runner:
+    build:
+      context: ./test
+    depends_on:
+      - ouster_driver
+    networks:
+      - ouster_net
+
+networks:
+  ouster_net:
+    driver: bridge      
